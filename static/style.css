@@ -1,0 +1,157 @@
+.body {
+    color: rgba(255, 255, 255, 0.86);
+    background-color: #172014;
+    margin: 0;
+    padding: 0;
+    
+} 
+
+.container-sm {
+    max-width: 300px; 
+    margin: 20px auto;
+    padding: 20px;
+    background-color: transparent;
+    box-shadow: 3px 7px 12px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    
+}
+#searchForm{
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+}
+
+.mb-4{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.86);
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+select, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #181818;
+    color: rgba(255, 255, 255, 0.86);
+    border: none;
+    border-radius: 5px;
+}
+.form-select{
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    color: rgba(255, 255, 255, 0.86);
+    background-color: #181818;
+    border: none;
+    border-radius: 5px;
+}
+
+#origin{
+    width: 130%;
+}
+#destination{
+    width: 130%;
+}
+#cabinSelection{
+    width: 130%;
+    background-color: #1C2519;
+    color: rgba(255, 255, 255, 0.86);
+    border: transparent;
+}
+
+@media (min-width: 100px) and (max-width: 800px){
+    #origin{
+        width: 50%;
+    }
+    #destination{
+        width: 50%;
+    }
+    #cabinSelection{
+        width: 50%;
+    }
+}
+.custom-btn{
+    width: 17%;
+    background-color: #38B8A6;
+    color: rgba(255, 255, 255, 0.86);
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    
+}
+@media(min-width:100px) and (max-width: 800px){
+    .custom-btn{
+        width: 20%;
+    }
+}
+
+.custom-btn:hover {
+    background-color: #11aa96;
+}
+
+#results {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+
+.flight {
+    width: 40%;
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #1A4D2F;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.flight p {
+    font-size: 0.85rem;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.flight h3{
+    margin: 5px 0;
+    text-align: center;
+}
+.flight-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.flight-logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    
+} 
+@media(min-width: 100px) and (max-width: 800px){
+    #results{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .flight{
+        width: 80%;
+        margin-top: 20px;
+    }
+    
+}
